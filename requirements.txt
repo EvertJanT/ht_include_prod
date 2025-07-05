@@ -1,0 +1,102 @@
+# Gradio Deployment Requirements
+# Optimized for production deployment with Gradio
+
+# Core Gradio and Web Framework
+gradio>=5.33.1,<6.0.0
+fastapi>=0.115.12,<1.0.0
+uvicorn>=0.32.0,<1.0.0
+
+# OpenAI and AI Dependencies
+openai>=1.85.0,<2.0.0
+openai-agents>=0.0.17,<1.0.0
+anthropic>=0.53.0,<1.0.0
+
+# LangChain and LangGraph
+langchain>=0.3.0,<0.4.0
+langchain-openai>=0.3.9,<0.4.0
+langchain-anthropic>=0.3.10,<0.4.0
+langchain-community>=0.3.20,<0.4.0
+langchain-experimental>=0.3.4,<0.4.0
+langgraph>=0.3.18,<0.4.0
+langgraph-checkpoint-sqlite>=2.0.6,<3.0.0
+langsmith>=0.3.18,<0.5.0
+
+# AutoGen
+autogen-agentchat>=0.6.1,<1.0.0
+autogen-core>=0.6.1,<1.0.0
+autogen-ext[grpc,mcp,ollama,openai]>=0.6.1,<1.0.0
+
+# HTTP and Network
+httpx>=0.28.1,<1.0.0
+requests>=2.32.3,<3.0.0
+aiohttp>=3.12.12,<4.0.0
+
+# Atlassian API and Confluence
+atlassian-python-api>=3.41.0,<4.0.0
+sentence-transformers>=2.5.0,<3.0.0
+
+# PDF Processing
+pypdf>=5.4.0,<6.0.0
+pypdf2>=3.0.1,<4.0.0
+
+# Data Processing
+pandas>=2.0.0,<2.3.0
+numpy>=1.26.0,<2.0.0
+plotly>=6.1.2
+
+# Web Scraping and Content
+bs4>=0.0.2,<1.0.0
+beautifulsoup4>=4.13.4,<5.0.0
+lxml>=5.3.1,<6.0.0
+wikipedia>=1.4.0,<2.0.0
+
+# Environment and Configuration
+python-dotenv>=1.0.1,<2.0.0
+pydantic>=2.11.5,<3.0.0
+pydantic-settings>=2.9.1,<3.0.0
+
+# MCP (Model Context Protocol)
+mcp[cli]>=1.5.0,<2.0.0
+mcp-server-fetch>=2025.1.17,<2026.0.0
+
+# Semantic Kernel
+semantic-kernel>=1.25.0,<2.0.0
+
+# Additional Tools
+playwright>=1.51.0,<2.0.0
+polygon-api-client>=1.14.5,<2.0.0
+psutil>=7.0.0,<8.0.0
+sendgrid>=6.11.0,<7.0.0
+
+# Development and Debugging
+ipywidgets>=8.1.5,<9.0.0
+
+# Security and Authentication
+cryptography>=45.0.4,<46.0.0
+certifi>=2025.4.26,<2026.0.0
+
+# Async Support
+anyio>=4.9.0,<5.0.0
+asyncio-mqtt>=0.16.1,<1.0.0
+nest-asyncio>=1.6.0,<2.0.0
+
+# File Handling
+aiofiles>=24.1.0,<25.0.0
+fsspec>=2025.5.1,<2026.0.0
+
+# JSON and Serialization
+orjson>=3.10.18,<4.0.0
+dataclasses-json>=0.6.7,<1.0.0
+
+# Image Processing (for Gradio)
+pillow>=11.2.1,<12.0.0
+
+# Audio Processing (for Gradio)
+pydub>=0.25.1,<1.0.0
+
+# System Dependencies
+setuptools>=78.1.0,<79.0.0
+packaging>=24.2,<25.0.0
+
+# Optional but Recommended for Production
+gunicorn>=21.2.0,<22.0.0 
